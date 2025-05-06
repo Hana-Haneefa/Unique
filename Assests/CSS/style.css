@@ -1,11 +1,8 @@
 :root {
-    --color01: #ff67ae;
-    --color02: #2A1D3D;
-    --color03: #44318D;
-    --color04: #ba6bff;
-    --color05: #83d5e6;
-}
-
+    --color01:rgb(117, 0, 0);
+    --color02: #ff7f7f;
+    --color03: #d61717;
+    
 body {
     font-family: arial;
 }
@@ -37,7 +34,7 @@ li a {
 .nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color04);
+    background-color: var(--color02);
     min-height: 60px;
     align-items: center;
     width: 100%;
@@ -303,7 +300,7 @@ li a {
 
 .viewAll a {
     text-decoration: none;
-    color: var(--color04);
+    color: var(--color02);
     font-size: 1.2rem;
 }
 
