@@ -1,0 +1,133 @@
+:root {
+    --color01: #ff67ae;
+    --color02: #2A1D3D;
+    --color03: #44318D;
+    --color04: #ba6bff;
+    --color05: #83d5e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            height: 400px;
+            margin-top: 45px;
+        }
+        .image {
+            position: absolute;
+            width: 30%;
+            transition: 1s ease-in-out;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #leftImage {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #rightImage {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #form {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid rgb(0, 0, 0);
+            margin-top: 10%;
+            padding: 50px;
+            border-radius: 20px;   
+        }
+
+    .terms {
+        font-size: 1rem;
+        color: black;
+    }
+
+
+        #lname, #fname, #email, #password, #confirmPassword, #submit, #uname {
+            width: 20vw;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #lname:focus, #fname:focus, #email:focus, #password:focus, #confirmPassword:focus, #uname:focus {
+            border-color: var(--color01);
+        }
+
+    #submit {
+        background-color: black;
+        color: white;
+        cursor: pointer;    
+        border: 1px solid black;
+    }
+
+    #submit:hover {
+        background-color: var(--color03);
+        color: white;
+        transition: 0.5s;
+    }
+    #submit:active {
+        background-color: black;
+        color: white;
+    }
+
+/* responsive design */
+@media (max-width: 1400px) {
+    .image {
+        display: none;
+    }
+    #form {
+        background-image: url(../Images/registerImages/08.jpg);
+        background-size: cover;
+        width: 80%;
+        height: 80vh;
+        transition: 0.5s ease-in-out;
+        margin-top: 20%;
+    }
+
+    .terms, p, h1 {
+        color: white;
+    }
+
+    a {
+        color: var(--color05);
+    }
+    #lname, #fname, #email, #password, #confirmPassword, #submit, #uname {
+        width: 80%;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #form {
+        margin-top: 30%;
+    }
+    #lname, #fname, #email, #password, #confirmPassword, #submit, #uname {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #form {
+        margin-top: 40%;
+    }
+    #lname, #fname, #email, #password, #confirmPassword, #submit, #uname {
+        width: 100%;
+    }
+}

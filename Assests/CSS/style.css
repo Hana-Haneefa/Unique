@@ -1,0 +1,695 @@
+:root {
+    --color01: #ff67ae;
+    --color02: #2A1D3D;
+    --color03: #44318D;
+    --color04: #ba6bff;
+    --color05: #83d5e6;
+}
+
+body {
+    font-family: arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color04);
+    min-height: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 40%;
+}
+
+.logo {
+    justify-content: start;
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.search button:hover {
+    background-color: white !important;
+    color: black !important;
+    transition: 0.5s;
+}
+ 
+.items img {
+    margin-right: 20px;
+}
+
+.womenDrop {
+    position: relative;
+    display: inline-block;
+}
+
+.womenDropDown, .menDropDown, .kidsDropDown, .cosmeticDropDown {
+    display: none;
+}
+
+.womenDrop:hover .womenDropDown {
+    display: block;
+}
+
+.menDrop:hover .menDropDown {
+    display: block;
+}
+
+.kidDrop:hover .kidsDropDown {
+    display: block;
+}
+
+.cosDrop:hover .cosmeticDropDown {
+    display: block;
+}
+
+.womenDropDown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.womenDropDown a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.womenDropDown a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: var(--color01);
+}
+
+/*men dropdown*/
+.menDropDown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.menDropDown a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.menDropDown a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: var(--color01);
+}
+
+/*kids dropdown*/
+.kidsDropDown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.kidsDropDown a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.kidsDropDown a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: var(--color01);
+}
+
+/*cosmetic dropdown*/
+.cosmeticDropDown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.cosmeticDropDown a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.cosmeticDropDown a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: var(--color01);
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color01);
+    padding: 5px 0;
+}
+
+/* Image slide */
+.slideContent {
+    margin-top: 30px;
+    height: 80vh;
+}
+
+
+
+/* links by image */
+.container {
+    display: flex;
+    margin-top: 20px;
+    height: 560px;
+}
+
+.two {
+    width: 50%;
+    height: inherit;
+}
+
+.womenC {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.men {
+    height:60%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.three {
+    display: flex;
+    height: 40%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.kids {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cosmetics {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.text_1, .text_2 {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    font-size: 150%;
+}
+
+.text_3, .text_4 {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    font-size: 100%;
+}
+.womenImg:hover {
+    opacity: 60%;
+}
+
+.menImg:hover {
+    opacity: 60%;
+}
+
+.kidImg:hover {
+    opacity: 60%;
+}
+
+.cosImg:hover {
+    opacity: 60%;
+}
+
+.container img {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    filter: grayscale(0%);
+    overflow: hidden;
+
+}
+
+.container {
+    overflow: hidden;
+}
+.arrivals, .viewAll {
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+
+.viewAll a {
+    text-decoration: none;
+    color: var(--color04);
+    font-size: 1.2rem;
+}
+
+.arrivals {
+    color: var(--color01);
+}
+
+/* clothes */
+
+.clothes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 0 20px;
+    height: 450px; 
+    flex-wrap: wrap;
+}
+
+.clothes1 {
+    width: 300px;
+    text-align: center;
+    height: 400px;
+    position: relative;
+}
+
+.clothes1>img {
+    width: 80%;
+    height: 100%;
+    box-shadow: 1px 1px 3px 3px #ccc;
+    transition: 0.5s ease;
+}
+
+.clothes1:hover > img {
+    transform: scale(1.1);
+}
+
+.clothes-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    gap: 20px;
+    padding: 0 20px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.clothes1 h3 {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.clothes1 p {
+    margin: 0.5rem 0;
+}
+
+.wish {
+    background-color: #ffff;
+    border: none;
+}
+
+.addToCart, .purchase {
+    min-width: 30%;
+    min-height: 8%;
+    background-color: var(--color01);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.addToCart:hover, .purchase:hover{
+    background-color: var(--color03);
+}
+
+.quickView {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    min-width: 30%;
+    min-height: 8%;
+    border: none;
+    background-color: #ffff;
+    font-weight: bold;
+    box-shadow: 0 1px 2px 0 #7d7d7d;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background-color: var(--color02);
+    padding: 20px 0;
+    color: white;
+}
+
+.left {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.top {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    color: var(--color01);
+    transition: 0.5s;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.footer>img {
+    width: 100%;
+    height: 100%;
+}
+
+.iconLinks {
+    display: flex;
+}
+
+.copy {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: var(--color03);
+    padding: 10px 0;
+    color: white;
+}
+
+.footerImg img {
+    width: auto;
+    height: 500px;
+}
+
+/* responsive design */
+@media screen and (max-width: 1300px) {
+
+    .clothes {
+        margin: 0 0 700px 0;
+    }
+
+    .clothes-2 {
+        margin: 0 0 600px 0;
+    }
+
+    .clothes1 {
+        margin-top: 120px;
+    }
+
+    .arrivals {
+        margin: 6rem 0 0 0;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .nav ul {
+        gap: 20px;
+    }
+    .nav ul li {
+        margin: 10px 10px;
+    }
+    .logo img {
+        width: 50%;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .welcome {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+    }
+    .welcome h3 {
+        font-size: 1.2rem;
+    }
+
+      .clothes {
+        margin: 0 0 700px 0;
+    }
+
+    .clothes-2 {
+        margin: 0 0 600px 0;
+    }
+
+    .clothes1 {
+        margin-top: 120px;
+    }
+
+    .arrivals {
+        margin: 6rem 0 0 0;
+    }
+}
+
+
+@media screen and (max-width: 1105px) {
+    .nav ul {
+        gap: 10px;
+    }
+    .nav ul li {
+        margin: 10px 5px;
+    }
+    .logo img {
+        width: 60%;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .logo {
+    justify-content: center;}
+
+    body {
+        align-items: center;
+        
+    }
+}
+@media screen and (max-width: 750px) {
+   nav {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav ul {
+       margin: 5px;;
+    }
+    .nav ul li {
+        margin: 20px 0;
+    }
+    
+    .logo {
+        width: 30%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .slideContent{
+        height: 50vh!important;
+    }
+    
+}
+
+@media screen and (max-width: 845px) {
+   .footer {
+    flex-direction: column;
+   }
+
+   footer .left, .right {
+    width: 100%;
+   }
+    
+    .footerImg {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .footer .left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+      footer .sec {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerImg img {
+        height: 300px;
+        width: auto;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100vw;
+    }
+
+    .womenC {
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        
+    }
+
+    .womenC img {
+        height: 80vh!important;
+        width: auto!important;
+        
+    }
+
+    .men img {
+        height: 50vh!important;
+        width: auto!important;
+    }
+
+    .kids {
+        width: 100%;
+    }
+
+    .kids img {
+        width: 100%!important;
+    }
+
+    .cosmetics {
+        width: 100%;
+    }
+
+    .cosmetics img {
+        height: 50vh!important;
+        width: auto!important;
+    }
+    .two {
+        width: 100%;
+        height: 50%;
+    }
+  
+    .three {
+        flex-direction: column;
+    }
+
+    .text_1, .text_2 {
+        font-size: 2em;
+    }
+    .text_3, .text_4 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .clothes {
+        height: 800px;
+        margin-bottom: 1400px;
+    }
+
+    .clothes-2 {
+        height: 800px;
+        margin-bottom: 1300px;
+    }
+    
+}
