@@ -2,7 +2,8 @@
     --color01:rgb(117, 0, 0);
     --color02: #ff7f7f;
     --color03: #d61717;
-    
+}
+
 body {
     font-family: arial;
 }
@@ -46,8 +47,12 @@ li a {
 
 .logo {
     justify-content: start;
-    display: flex;
     /* border: 2px solid red; */
+    width: 20%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
 }
 
 .search button:hover {
@@ -332,6 +337,7 @@ li a {
     height: 100%;
     box-shadow: 1px 1px 3px 3px #ccc;
     transition: 0.5s ease;
+    object-fit: cover;
 }
 
 .clothes1:hover > img {
