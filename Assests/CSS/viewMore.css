@@ -44,14 +44,14 @@ h1 {
 
 p {
     font-size: 1.5rem;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .size {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .size>div {
@@ -70,7 +70,6 @@ p {
 .button>div {
     width: 50%;
     height: 150%;
-    border: 2px solid;
     margin: 0 5px;
 }
 
@@ -82,9 +81,37 @@ input {
     font-size: 1rem;
     color: white;
     background-color: black;
+    margin-top: 20px;
 }
 
 input:hover {
     background-color: var(--color01);
+    transition: 0.3s ease-in-out;
+}
+
+.alike {
+    margin-top: 60px;
+    text-align: center;
+}
+.alike1 {
+ display: flex;
+ padding: 50px 0;
+}
+
+.alike1 img {
+    width: 80%;
+    height: 100%;
+    object-fit: fill;
+    
+}
+
+.alike1 div {
+    width: 50%;
+    box-shadow: 0 1px 1.5px 0000 rgb(160, 160, 160);
+    margin-right: 20px;
+}
+
+.alike1 div:hover {
+    border: 2px solid var(--color01);
     transition: 0.3s ease-in-out;
 }
