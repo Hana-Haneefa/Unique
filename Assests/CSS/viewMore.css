@@ -115,3 +115,46 @@ input:hover {
     border: 2px solid var(--color01);
     transition: 0.3s ease-in-out;
 }
+
+/* Responsive design */
+
+@media (max-width: 1325px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image, .details {
+        width: 100%;
+        height: 100%;
+    }
+
+    .size>div {
+        width: 20%;
+    }
+
+    .button>div {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    input {
+        font-size: 1.5rem;
+    }
+    .button {
+        flex-direction: column;
+    }
+
+    .size>div {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    .alike1 div:hover {
+    border: 2px solid var(--color01);
+    transition: 0.3s ease-in-out;
+}
+}
